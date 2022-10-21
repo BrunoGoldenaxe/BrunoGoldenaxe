@@ -1,0 +1,1458 @@
+html{
+    display: flex;
+    position: absolute;
+    height: 3761px;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-rendering: optimizelegibility;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+}
+
+body{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: white;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.section-flex-container-header{
+    display: flex;
+    top:0;
+    right: 0;
+    width: 1366px; /*Largura padrão da web para boas resoluções.*/
+    height: 140px;
+    padding: 0;
+    margin: 0;
+    background-attachment: fixed;
+    position:sticky;
+    z-index: 2;
+    border-bottom: solid #f7f7f7 1px;
+    background-color: #f7f7f7;
+    scroll-behavior: auto;
+    -webkit-font-smoothing: antialiased;
+    box-sizing: content-box;
+    box-shadow: 0 2px 2px -2px #f7f7f7;
+}
+
+#section-logoIfood{
+    display: flex;
+    position: relative;
+    height: 30%;
+    padding-top: 25px;
+    left: 65px;
+}
+
+.section-nav-menu{
+    display: flex;
+    position: relative;
+    height: 40px;
+    width: 580px;
+    margin: 0;
+    padding: 0;
+    padding-inline: 5px;
+    top: 40px;
+    left:30px;
+    line-height: 1.25em;
+}
+
+.section-nav-menu ul li a{
+    text-decoration: none;
+    color:#3e3e3e;
+    background: transparent;
+    line-height: 1.25em;
+    font-size: 18px;
+    padding-left: 10px;
+}
+
+.section-nav-menu li{
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+.section-nav-login{
+    display: flex;
+    position: relative;
+    top: 40px;
+    left:350px;
+    height: 40px;
+    width: 300px;
+
+
+}
+
+.section-nav-login li{
+    text-decoration: none;
+    display: inline;
+    margin: 0 0 0 15px;
+    text-decoration: none; 
+    color: #3e3e3e;
+}
+
+.section-nav-login li a{
+    text-decoration: none;
+    color: #ea1d2c;
+    line-height: 1.25em;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.section-button-entrar{
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    cursor: pointer;
+    top: 43px;
+    right: 0;
+    left:1200px;
+    font-size: 14px;
+    line-height: 1.25em;
+    font-weight: bold;
+    transition: 1s;
+    padding-left: 30px;
+    padding-right: 30px;
+    align-items: center;
+    width: 100px;
+    height: 45px;
+    background-color: #ea1d2c;
+    color: #f7f7f7;
+    border: none;
+    border-radius: 6px;
+}
+
+.section-button-entrar:hover{
+    background-color: #CD5C5C; 
+}
+
+/*--------------------------------------------*/
+
+main{
+    display: flex;
+    position: absolute;
+    left: 0;
+    width: 1366px;
+    height: 3761px;
+    box-sizing: border-box;
+}
+
+.section-principal{
+    display: flex;
+    position: absolute;
+    width: 1366px; /*Largura padrão da web para boas resoluções.*/
+    height: 500px;
+    padding: 0;
+    margin: 0;
+    border-bottom: solid #f7f7f7 1px;
+    background-color: #f7f7f7;
+    box-sizing: border-box;
+}
+
+
+.section-div-h2{
+    display: flex;
+    position: relative;
+    width:520px;
+    height: 60px;
+    left: 400px;
+    right: 0;
+    padding: 0;
+    margin: 0;
+    top:150px;
+    font-size: 40px;
+}
+
+.section-div-h2::selection{
+    background-color: #ea1d2c;
+    color: white;
+}
+
+p{
+    display: flex;
+    position: absolute;
+    width: 390px;
+    align-items: center;
+    height: 30px;
+    margin: 0;
+    padding: 0;
+    top: 210px;
+    right: 0;
+    left: 460px;
+    color: #717171;
+}
+
+p::selection{
+    background-color: #ea1d2c;
+    color: white;
+}
+
+form{
+    position: absolute;
+    align-items: center;
+    display: flex;
+    height: 50px;
+    width: 970px;
+    right: 0;
+    left: 100px;
+    padding: 0;
+    margin: 0;
+    top:280px;
+
+}
+
+.section-div-logo{
+    z-index: 1;
+    float: left;
+    margin: 0;
+    position: absolute;
+    display: flex;
+    right: 0;
+    left:205px;
+    width: 2%;
+    top: 291px;
+}
+
+.section-form-input{
+    position:relative;
+    right: 0;
+    left:120px;
+    display: flex;
+    font-size: 1rem;
+    line-height: 1.25em;
+    transition: 1s;
+    padding-left: 30px;
+    padding-right: 30px;
+    align-items: center;
+    height: 45px;
+    width: 600px;
+    border-width: 2px;
+    border-style:none;
+    border-color: -internal-light-dark(#fff, #fff);
+    border-image: initial;
+    /*first value applies to top-left corner, second value applies to top-right 
+    corner, third value applies to bottom-right corner, and fourth 
+    value applies to bottom-left corner*/
+    border-radius: 0 2% 2% 0;
+    outline: 0;
+    color: darkgray;
+}
+::-webkit-input-placeholder{
+    color:darkgray;
+    font-size: 14px;
+}
+
+.section-form-input-boxIcon{
+    position:absolute;
+    display: flex;
+    right:0;
+    left: 90px;
+    height: 47px;
+    width: 40px;
+    background-color: #fff;
+    border:  -internal-light-dark(#fff, #fff) solid 1px;
+    border-radius: 4% 0 0 4%;
+}
+
+.section-button-buscar{
+    text-decoration: none;
+    position: relative;
+    cursor: pointer;
+    top: 0;
+    right: 0;
+    left:140px;
+    display: inline;
+    font-size: 0.9rem;
+    font-weight: bold;
+    padding-left: 10px;
+    transition: 1s;
+    align-items: center;
+    text-align: center;
+    height: 46px;
+    background-color: #ea1d2c;
+    color: #f7f7f7;
+    border: none;
+    border-radius: 5%;
+    width: 130px;   
+}
+
+.section-button-buscar:hover{
+    background-color: #CD5C5C;
+}
+
+/*-----------------------------------------*/
+
+
+a{
+    text-decoration: none;
+}
+
+
+.section-div-template{
+    display: flex;
+    position: absolute;
+    margin: 0;
+    right: 0;
+    left: 180px;
+    width: 850px;
+    height: 230px;
+    top:380px;
+}
+
+.p-buscarLojas{
+    display: flex;
+    position: absolute;
+    color: white;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    right: 0;
+    left:18px;
+    top:140px;
+    height: 36px;
+    width: 160px;
+    font-weight: 500;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 12px;
+    background-color: #9eb53e;
+}
+
+.p-mercado-template{
+    display: flex;
+    position: absolute;
+    color: white;
+    font-size: 38px;
+    margin: 0;
+    padding: 0;
+    left: 20px;
+    right: 0;
+    top:30px;
+    width: 140px;
+    height: 40px;
+}
+
+.section-div-template-mercado{
+    display: flex;
+    position: relative;
+    margin: 12px;
+    padding: 0;
+    right: 0;
+    left:0;
+    width: 411px;
+    height: 218px;
+    background-color: #b6d048; 
+    border-radius: 8%;
+}
+
+.carrinho{
+    display: flex;
+    position: relative;
+    top:24px;
+    left:180px;
+    scale:0.8;
+}
+
+
+.p-restaurante{
+    display: flex;
+    position: absolute;
+    color: white;
+    font-size: 38px;
+    margin: 0;
+    padding: 0;
+    left: 20px;
+    right: 0;
+    top:30px;
+    width: 200px;
+    height: 40px;
+}
+
+.p-verOpcoes{
+    display: flex;
+    position: absolute;
+    color: white;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    right: 0;
+    left: 18px;
+    top:140px;
+    height: 36px;
+    width: 160px;
+    font-weight: 500;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 12px;
+    background-color: #cc1825;
+}
+
+.section-div-template-restaurante{
+    display: flex;
+    position: relative;
+    margin: 12px;
+    padding: 0;
+    right: 0;
+    left:0;
+    width: 411px;
+    height: 218px;
+    background-color: #ea1d2c;
+    margin-left: 10px;
+    border-radius: 8%;
+}
+
+.hamburguer{
+    display: flex;
+    position: relative;
+    scale: 0.7;
+    top: 33px;
+    left:144px;
+}
+
+
+/*Transition order(property/duration/function/delay)*/
+.section-div-template-restaurante:hover, .section-div-template-mercado:hover{
+    border-style: none;
+    transition: all .2s cubic-bezier(0,0,.5,1);
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
+/*---------------------------------------------*/
+
+.section-primeiraParte{
+    flex-direction: row;
+    justify-content: space-between;
+    width: 850px;
+    height: 90px;
+    display: flex;
+    position: absolute;
+    box-sizing: border-box;
+    top: 700px;
+    left:180px;
+    right: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0;
+}
+
+.bebidas{
+    background-color: #f6d553;
+    margin: 0;
+    padding: 0;
+    width: 188px;
+    height: 47px;
+    border-radius: 6px;
+    display: flex;
+    position: relative;
+}
+
+.farmacia{
+    background-color: #f9879c;
+    margin: 0;
+    padding: 0;
+    width: 188px;
+    height: 47px;
+    border-radius: 6px;
+    display: flex;
+    position: relative;
+}
+
+.petshop{
+    background-color: #8c60c5;
+    margin: 0;
+    padding: 0;
+    width: 188px;
+    height: 47px;
+    border-radius: 6px;
+    display: flex;
+    position: relative;
+}
+
+.section-primeiraParte p{
+    display: flex;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    left: 60px;
+    right: 0;
+    top: 50px;
+    text-align: center;
+    width: 80px;
+    height: 30px;
+}
+
+.bebidas:hover, .farmacia:hover, .petshop:hover{
+    transition: all .2s cubic-bezier(0,0,.5,1);
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
+
+.imagens-primeiraParte-bebidas{
+    display: flex;
+    position: relative;
+    scale: 2;
+    padding: 0;
+    margin: 0;
+    top:-22px
+}
+
+.imagens-primeiraParte-farmacia{
+    display: flex;
+    position: relative;
+    scale: 2;
+    padding: 0;
+    margin: 0;
+    top:-22px;
+    right: 12px;
+}
+
+.imagens-primeiraParte-petshop{
+    display: flex;
+    position: relative;
+    scale: 1.8;
+    padding: 0;
+    margin: 0;
+    top:-17px;
+    right: 20px;
+}
+
+/*-----------------------------------------*/
+
+.section-segundaParte{
+    width: 1300px;
+    height: 540px;
+    display: flex;
+    position: absolute;
+    box-sizing: border-box;
+    flex-direction: row;
+    justify-content: space-between;
+    right: 0;
+    padding: 0;
+    margin: 10px;
+    left: 10px;
+    top:800px;
+}
+
+.melhores-restaurantes{
+    width: 1300px;
+    height: 200px;
+    font-size: 26PX;
+    font-weight: 500;
+    padding-top: 20px;
+    border-top: 2px solid #f2f2f2;
+    color: #1a1a1a;
+    display: flex;
+    position: absolute;
+    margin: 20px;
+    left:0;
+    right: 0;
+    top:0px;
+}
+
+h3::selection{
+    background-color: #ea1d2c;
+    color: white;
+}
+
+.section-segundaParte-box{
+    max-width: 1300px;
+    width: 100%;
+    height: 140px;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    padding: 0;
+    margin: 20px;
+    left: 0;
+    right: 0;
+    top:100px;
+}
+
+.box-mcdonalds, .box-cocoBambu, .box-chinaInBox, .box-habibs, .box-outback{
+    width:200px;
+    height: 100px;
+    display: grid;
+    position: relative;
+    justify-content: space-between;
+    border: 1px solid #dcdcdc;
+    border-radius: 8px;
+    padding: 20px 16px;
+    right: 0;
+}
+
+.box-mcdonalds:hover, .box-cocoBambu:hover, .box-chinaInBox:hover, .box-habibs:hover, .box-outback:hover{
+    transition: all .35s ease-in-out;
+    border-color: #3e3e3e;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.title{
+    display: flex;
+    position: relative;
+    left: 0;
+    right: 0;
+    padding: 0;
+    margin: 0;
+    font-size: .875rem;
+    left:60px;
+    top:20px;
+}
+
+.class{
+    display: flex;
+    position: relative;
+    left: 60PX;
+    right: 0;
+    padding: 0;
+    margin: 0;
+    font-size: .75rem;
+    top:6px;
+}
+
+.verificado{
+    display: flex;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    left: 185px;
+    right: 0;
+    top:-75px;
+
+}
+
+.mcdonalds{
+    display: flex;
+    position: relative;
+    top:-62px;
+}
+
+.cocoBambu{
+    display: flex;
+    position: relative;
+    top:-62px;
+}
+
+.chinaInBox{
+    display: flex;
+    position: relative;
+    top:-62px;
+}
+
+.habibs{
+    display: flex;
+    position: relative;
+    top:-62px;
+}
+
+.outbackSteakhouse{
+    display: flex;
+    position: relative;
+    top:-62px;
+}
+
+.box2-template-png{
+    width:1300px;
+    height: 220px;
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+    right: 100px;
+    left: 0;
+    top:200px;
+}
+
+.box2-template{
+    display: flex;
+    position: relative;
+    scale:1.0;
+    left:0;
+    right: 90px;
+    padding: 10px;
+    margin: 0;
+    cursor: pointer;
+    top:-20px;
+}
+
+.section-terceiraParte{
+    width: 1366px;
+    height: 1000px;
+    display: flex;
+    position: absolute;
+    box-sizing: border-box;
+    flex-direction: row;
+    justify-content: space-between;
+    right: 0;
+    padding: 0;
+    margin: 10px;
+    left: 10px;
+    top:1360px;
+}    
+
+.melhores-mercados{
+    width: 1300px;
+    font-size: 26PX;
+    font-weight: 500;
+    padding-top: 20px;
+    border-top: 2px solid #f2f2f2;
+    color: #1a1a1a;
+    display: flex;
+    position: absolute;
+    margin: 20px;
+    left:0;
+    right: 0;
+}
+
+.section-terceiraParte-box{
+    width: 1300px;
+    height: 142px;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    margin: 20px;
+    padding: 0;
+    top:90px;
+}
+
+.box-diaSupermercado,.box-diaSupermercado-2, .box-big, .box-big-2, .box-eataly{
+    width:200px;
+    height: 100px;
+    display: grid;
+    position: relative;
+    justify-content: space-between;
+    border: 1px solid #dcdcdc;
+    border-radius: 8px;
+    padding: 20px 16px;
+    right: 0;
+}
+
+.melhores-mercados-title{
+    display: flex;
+    position: relative;
+    left: 0;
+    right: 0;
+    padding: 0;
+    margin: 0;
+    font-size: .875rem;
+    left:65px;
+    top:35px;
+}
+
+.dia{
+    display: flex;
+    position: relative;
+    right: 8px;
+    top:-18px;
+}
+
+.big{
+    display: flex;
+    position: relative;
+    top:-18px;
+    right: 4px;
+}
+
+.eataly{
+    display: flex;
+    position: relative;
+    right: 8px;
+    top:-12px;
+}
+
+
+.box-diaSupermercado:hover,.box-diaSupermercado-2:hover, 
+.box-big:hover, .box-big-2:hover, .box-eataly:hover{
+    transition: all .35s ease-in-out;
+    border-color: #3e3e3e;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/*--------------------------------------------*/
+
+
+.entregas-ifood{
+    display: flex;
+    position: absolute;
+    width: 1300px;
+    height: 600px;
+    top:320px;
+}
+
+.entregas{
+    display: flex;
+    position: relative;
+    left: 0;
+    right: 0;
+    top:0;
+    margin: 0;
+    scale:0.6;
+}
+
+.entregas-p1, .entregas-p2, .entregas-p3{
+    display:inline;
+    position: absolute;
+    color: #1a1a1a;
+    font-size: 38px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    left:400px;
+    right: 0;
+    margin: 0;
+    width: 300px;
+    height: 200px;
+}
+
+.entregas-p1{
+    top:60px;
+}
+
+.entregas-p2{
+    top:100px;
+}
+
+.entregas-p3{
+    top:140px;
+}
+
+
+.entregas-p4{
+    display:inline;
+    position: absolute;
+    color:#717171;
+    font-size: 16px;
+    right: 0;
+    margin: 0;
+    top:230px;
+    left:400px;
+}
+
+.entregas-p5{
+    display:inline;
+    position: absolute;
+    color:#717171;
+    font-size: 16px;
+    right: 0;
+    margin: 0;
+    top:250px;
+    left:400px;
+}
+
+.section-button-saibamais{
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    cursor: pointer;
+    top: 300px;
+    right: 0;
+    left:400px;
+    font-size: .975rem;
+    line-height: 1.25em;
+    font-weight: bold;
+    transition: 1s;
+    text-align: center;
+    padding-top: 15px;
+    padding-left: 25px;
+    padding-bottom: 10px;
+    width: 140px;
+    height: 50px;
+    background-color: #ea1d2c;
+    color: #f7f7f7;
+    border: none;
+    border-radius: 6px;   
+}
+.section-button-saibamais:hover{
+    background-color: #CD5C5C; 
+}
+
+.cadastro{
+    display: flex;
+    position: relative;
+    left: 100px;
+    right: 0;
+    top:-20px;
+    margin: 0;
+    scale:0.6;
+}
+
+.cadastro-p1, .cadastro-p2, .cadastro-p3{
+    display:inline;
+    position: absolute;
+    color: #1a1a1a;
+    font-size: 38px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    left:990px;
+    right: 0;
+    margin: 0;
+    width: 300px;
+    height: 200px;
+}
+
+.cadastro-p1{
+    top:60px;
+}
+
+.cadastro-p2{
+    top:100px;
+}
+
+.cadastro-p3{
+    top:140px;
+}
+
+.cadastro-p1::selection, .cadastro-p2::selection, .cadastro-p3::selection{
+    background-color: #ea1d2c;
+    color: white;
+}
+
+.cadastro-p4{
+    display:inline;
+    position: absolute;
+    color:#717171;
+    font-size: 16px;
+    right: 0;
+    margin: 0;
+    top:230px;
+    left:990px;
+}
+
+.cadastro-p5{
+    display:inline;
+    position: absolute;
+    color:#717171;
+    font-size: 16px;
+    right: 0;
+    margin: 0;
+    top:250px;
+    left:990px;
+}
+
+.section-button-saibamais2{
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    cursor: pointer;
+    top: 300px;
+    right: 0;
+    left:990px;
+    font-size: .975rem;
+    line-height: 1.25em;
+    font-weight: bold;
+    transition: 1s;
+    text-align: center;
+    padding-top: 15px;
+    padding-left: 25px;
+    padding-bottom: 10px;
+    width: 140px;
+    height: 50px;
+    background-color: #ea1d2c;
+    color: #f7f7f7;
+    border: none;
+    border-radius: 6px;   
+}
+.section-button-saibamais2:hover{
+    background-color: #CD5C5C; 
+}
+
+/*----------------------------------*/
+
+.section-quartaParte{
+    width: 1366px;
+    height: 650px;
+    display: flex;
+    position: absolute;
+    box-sizing: border-box;
+    flex-direction: row;
+    justify-content: space-between;
+    right: 0;
+    padding: 0;
+    margin: 10px;
+    left: 10px;
+    top:2200px;
+}
+
+.border{
+    border-top: 2px solid #f2f2f2;
+    display: flex;
+    position: absolute;
+    margin: 20px;
+    width: 1300px;
+    left: 0;
+    right: 0;
+}
+
+.fomedoque-1, .fomedoque-2, .fomedoque-3{
+    width: 1300px;
+    font-size: 38PX;
+    font-weight: 500;
+    padding-top: 60px;
+    color: #1a1a1a;
+    display: flex;
+    position: absolute;
+    margin: 20px;
+    left:100px;
+    right: 0;
+}
+
+.fomedoque-1{
+    top:0;
+}
+
+.fomedoque-2{
+    top:40px;
+}
+
+.fomedoque-3{
+    top:80px;
+}
+
+.fomedoque-1::selection, .fomedoque-2::selection, .fomedoque-3::selection{
+    background-color: #ea1d2c;
+    color: white;
+}
+
+.fomedoque-p1{
+    display:inline;
+    position: absolute;
+    color:#717171;
+    font-size: 16px;
+    right: 0;
+    margin: 0;
+    top:240px;
+    left:120px;
+}
+
+.fomedoque-p2{
+    display:inline;
+    position: absolute;
+    color:#717171;
+    font-size: 16px;
+    right: 0;
+    margin: 0;
+    top:260px;
+    left:120px;
+}
+
+.section-button-saibamais3{
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    cursor: pointer;
+    top: 310px;
+    right: 0;
+    left:120px;
+    font-size: .975rem;
+    line-height: 1.25em;
+    font-weight: bold;
+    transition: 1s;
+    text-align: center;
+    padding-top: 15px;
+    padding-left: 25px;
+    padding-bottom: 10px;
+    width: 140px;
+    height: 50px;
+    background-color: #ea1d2c;
+    color: #f7f7f7;
+    border: none;
+    border-radius: 6px;   
+}
+.section-button-saibamais3:hover{
+    background-color: #CD5C5C; 
+}
+
+.template{
+    display: flex;
+    position: absolute;
+    left:400px;
+    right: 0;
+    top:40px;
+    margin: 0;
+    scale:1;
+}
+
+.beneficios{
+    display: flex;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 500px;;
+    margin: 0;
+    scale:1;
+}
+
+.beneficios:hover{
+    cursor: pointer;
+}
+
+/*------------------------------------------*/
+
+.section-quintaParte{
+    width: 1300px;
+    height: 300px;
+    display: flex;
+    position: absolute;
+    box-sizing: border-box;
+    flex-direction: row;
+    justify-content: space-between;
+    right: 0;
+    padding: 0;
+    margin: 20px;
+    left: 10px;
+    top:2860px;
+}
+
+
+.explore-cidades{
+    top:0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    margin-left: 40px;
+    padding: 0;
+    font-size: 1.25rem;
+    width: 300px;
+    height: 60px;
+}
+
+.explore-cidades-a{
+    display: flex;
+    color: #ea1d2c;
+    justify-self: end;
+    margin-top: 0.2rem;
+    font-weight: 400;
+}
+
+.explore-cidades-a:hover{
+    cursor: pointer;
+}
+
+.box1{
+    display: flex;
+    position:absolute;
+    width: 325px;
+    height: 260px;
+    left: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    top:40px;
+}
+
+.cidades-box1 ul{
+    display: flex;
+    position:relative;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    text-decoration: none;
+    top:40px;
+}
+
+.cidades-box1 li{
+    display: flex;
+    position: relative;
+    text-decoration: none;
+    left:0;
+    right: 0;
+    margin: 0;
+    top:0;
+}
+
+.cidades-box1 li a{
+    display: flex;
+    position: relative;
+    font-weight: 400;
+    font-size: 1.1rem;
+    line-height: 1.22;
+    color:#717171;
+    transition: color .15s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    text-decoration: none;
+    left:0;
+    right: 0;
+    margin: 0;
+    width: 200px;
+    height: 30px;
+    padding: 0;
+    padding-bottom: 20px;
+    justify-content: space-between;
+}
+
+.cidades-box1 li a:hover{
+    color:#3e3e3e;
+}
+
+
+.box2{
+    display: flex;
+    position:absolute;
+    width: 325px;
+    height: 260px;
+    left: 328px;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    top:40px;
+}
+
+.cidades-box2 ul{
+    display: flex;
+    position:relative;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    text-decoration: none;
+    top:40px;
+}
+
+.cidades-box2 li{
+    display: flex;
+    position: relative;
+    text-decoration: none;
+    left:0;
+    right: 0;
+    margin: 0;
+    top:0;
+}
+
+.cidades-box2 li a{
+    display: flex;
+    position: relative;
+    font-weight: 400;
+    font-size: 1.1rem;
+    line-height: 1.22;
+    color:#717171;
+    transition: color .15s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    text-decoration: none;
+    left:0;
+    right: 0;
+    margin: 0;
+    width: 200px;
+    height: 30px;
+    padding: 0;
+    padding-bottom: 20px;
+    justify-content: space-between;
+}
+
+.cidades-box2 li a:hover{
+    color:#3e3e3e;
+}
+
+.box3{
+    display: flex;
+    position:absolute;
+    width: 325px;
+    height: 260px;
+    left: 656px;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    top:40px;
+}
+
+.cidades-box3 ul{
+    display: flex;
+    position:relative;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    text-decoration: none;
+    top:40px;
+}
+
+.cidades-box3 li{
+    display: flex;
+    position: relative;
+    text-decoration: none;
+    left:0;
+    right: 0;
+    margin: 0;
+    top:0;
+}
+
+.cidades-box3 li a{
+    display: flex;
+    position: relative;
+    font-weight: 400;
+    font-size: 1.1rem;
+    line-height: 1.22;
+    color:#717171;
+    transition: color .15s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    text-decoration: none;
+    left:0;
+    right: 0;
+    margin: 0;
+    width: 200px;
+    height: 30px;
+    padding: 0;
+    padding-bottom: 20px;
+    justify-content: space-between;
+}
+
+.cidades-box3 li a:hover{
+    color:#3e3e3e;
+}
+
+
+.box4{
+    display: flex;
+    position:absolute;
+    width: 325px;
+    height: 260px;
+    left: 984px;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    top:40px;
+}
+
+.cidades-box4 ul{
+    display: flex;
+    position:relative;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    text-decoration: none;
+    top:40px;
+}
+
+.cidades-box4 li{
+    display: flex;
+    position: relative;
+    text-decoration: none;
+    left:0;
+    right: 0;
+    margin: 0;
+    top:0;
+}
+
+.cidades-box4 li a{
+    display: flex;
+    position: relative;
+    font-weight: 400;
+    font-size: 1.1rem;
+    line-height: 1.22;
+    color:#717171;
+    transition: color .15s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    text-decoration: none;
+    left:0;
+    right: 0;
+    margin: 0;
+    width: 200px;
+    height: 30px;
+    padding: 0;
+    padding-bottom: 20px;
+    justify-content: space-between;
+}
+
+.cidades-box4 li a:hover{
+    color:#3e3e3e;
+}
+
+
+.section-sextaParte{
+    width: 1300px;
+    height: 300px;
+    display: flex;
+    position: absolute;
+    box-sizing: border-box;
+    flex-direction: row;
+    justify-content: space-between;
+    right: 0;
+    padding: 0;
+    margin: 20px;
+    left: 40px;
+    top:3200px;
+    background-color: #3e3e3e;
+}
+
+.border2{
+    border-top: 2px solid #f2f2f2;
+    display: flex;
+    position: absolute;
+    margin: 0;
+    width: 1300px;
+    left: 0;
+    right: 0;
+    top:-40px;
+}
+
+.footer-ifood{
+    top:0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 1.25rem;
+    width: 300px;
+    height: 30px;
+}
+
+.box-institucional{
+    display: flex;
+    position:absolute;
+    width: 325px;
+    height: 260px;
+    left: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    top:40px;
+    background-color: #dcdcdc;
+}
+
+/*------------------------------*/
+
+.itens-institucional1 ul{
+    display: flex;
+    position:relative;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    text-decoration: none;
+    top:40px;
+}
+
+.itens-institucional1 li{
+    display: flex;
+    position: relative;
+    text-decoration: none;
+    left:0;
+    right: 0;
+    margin: 0;
+    top:0;
+}
+
+.itens-institucional1 li a{
+    display: flex;
+    position: relative;
+    font-weight: 400;
+    font-size: 1.1rem;
+    line-height: 1.22;
+    color:#717171;
+    transition: color .15s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    text-decoration: none;
+    left:0;
+    right: 0;
+    margin: 0;
+    width: 200px;
+    height: 30px;
+    padding: 0;
+    padding-bottom: 20px;
+    justify-content: space-between;
+}
+
+.itens-institucional1 li a:hover{
+    color:#3e3e3e;
+}
+
