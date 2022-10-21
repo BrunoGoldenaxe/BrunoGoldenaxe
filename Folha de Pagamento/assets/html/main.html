@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Folha de Pagamento</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="icon" href="../Free_Sample_By_Wix.jpg">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+</head>
+<body>
+    <header>
+        <h1>Folha de Pagamento</h1> 
+        <input type="text" placeholder="R$ 0,00" readonly class="somaProventos">
+        <input type="text" placeholder="R$ 0,00" readonly class="somaDescontos">
+        <input type="text" placeholder="R$ 0,00" readonly class="diferencaSoma">
+        <span class="material-symbols-outlined" src="../file_open_FILL0_wght400_GRAD0_opsz48.svg">file_open</span>
+        <button id="download">Exportar</button>
+    </header> 
+    <main>
+        <div class="container">
+            <h2>Folha de Pagamento Analítica de <input type="text" placeholder="mês" class="inputMonth">/2022 de funcionários.</h2>
+            <div class="table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Verba</th>
+                            <th>Descrição</th>
+                            <th>Proventos</th>
+                            <th>Descontos</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>0002</td>
+                            <td class="verba">Valor Pago na Rescisão</td>
+                            <td>---</td>
+                            <td class="descontos"><input type="text" inputmode="numeric" value="0,00" step="0.2" placeholder="R$ 0,00" id="verba002" class="valor descontos"></td>  
+                        </tr>
+                        <tr>
+                            <td>0006</td>
+                            <td class="verba">Adiantamento Salarial</td>
+                            <td>---</td> 
+                            <td class="descontos"><input type="text" inputmode="numeric" value="0,00" step="0.1" placeholder="R$ 0,00" class="valor descontos"></td>    
+                        </tr>
+                        <tr>
+                            <td>0008</td>
+                            <td class="verba">Adicional de Férias vencidas</td>
+                            <td class="proventos"><input type="text" inputmode="numeric" value="0,00" step="0.1" placeholder="R$ 0,00" class="valor proventos"></td>
+                            <td>---</td>    
+                        </tr>
+                        <tr>
+                            <td>0009</td>
+                            <td class="verba">Férias Venvidas</td>
+                            <td class="proventos"><input type="text" inputmode="numeric" value="0,00" step="0.1" placeholder="R$ 0,00" class="valor proventos"></td>
+                            <td>---</td>    
+                        </tr>
+                        <tr>
+                            <td>0010</td>
+                            <td class="verba">Adicional de Férias S Aviso Indenizado</td>
+                            <td class="proventos"><input type="text" inputmode="numeric" value="0,00" step="0.1" placeholder="R$ 0,00" class="valor proventos"></td>
+                            <td>---</td>
+                        </tr>
+                        <tr>
+                            <td>0011</td>
+                            <td class="verba">Férias Sobre Aviso Indenizado</td>
+                            <td class="proventos"><input type="text" inputmode="numeric" value="0,00" step="0.1" placeholder="R$ 0,00" class="valor proventos"></td>
+                            <td>---</td>
+                        </tr>
+                        <tr>
+                            <td>0012</td>
+                            <td class="verba">Adicional de Férias Proporcionais</td>
+                            <td class="proventos"><input type="text" inputmode="numeric" value="0,00" step="0.1" placeholder="R$ 0,00" class="valor proventos"></td>
+                            <td>---</td>
+                        </tr>
+                        <tr>
+                            <td>0014</td>
+                            <td class="verba">Multa por Antecipação de Fim de Contrato</td>
+                            <td class="proventos"><input type="text" inputmode="numeric" value="0,00" step="0.1" placeholder="R$ 0,00" class="valor proventos"></td>
+                            <td>---</td>
+                        </tr>
+                        <tr>
+                            <td>0015</td>
+                            <td class="verba">Desconto Multa Ant. Fim de Contrato</td>
+                            <td>---</td> 
+                            <td class="descontos"><input type="text" inputmode="numeric" value="0,00" step="0.1" placeholder="R$ 0,00" class="valor descontos"></td>       
+                        </tr>
+                        <tr>
+                            <td>0017</td>
+                            <td class="verba">13º Proporcional</td>
+                            <td class="proventos"><input type="text" inputmode="numeric" value="0,00" step="0.1" placeholder="R$ 0,00" class="valor proventos"></td>
+                            <td>---</td>
+                        </tr>
+                        <tr>
+                            <td>0018</td>
+                            <td class="verba">13º Indenizado</td>
+                            <td class="proventos"><input type="text" inputmode="numeric" value="0,00" step="0.1" placeholder="R$ 0,00" class="valor proventos"></td>
+                            <td>---</td>
+                        </tr>
+                        <tr>
+                            <td>0019</td>
+                            <td class="verba">Multa dissídio</td>
+                            <td class="proventos"><input type="text" inputmode="numeric" value="0,00" step="0.1" placeholder="R$ 0,00" class="valor proventos"></td>
+                            <td>---</td>
+                        </tr>
+                        <tr>
+                            <td>0024</td>
+                            <td class="verba">INSS 13º</td>
+                            <td>---</td>
+                            <td class="descontos"><input type="text" inputmode="numeric" value="0,00" step="0.1" placeholder="R$ 0,00" class="valor descontos"></td>
+                        </tr>
+                        <tr>
+                            <td>0029</td>
+                            <td class="verba">Vale Transporte</td>
+                            <td>---</td>  
+                            <td class="descontos"><input type="text" inputmode="numeric" value="0,00" step="0.1" placeholder="R$ 0,00" class="valor descontos"></td>   
+                        </tr>
+                        <tr>
+                            <td>0030</td>
+                            <td class="verba">Arredondamento Positivo</td>
+                            <td class="proventos"><input type="text" inputmode="numeric" value="0,00" step="0.1" placeholder="R$ 0,00" id="arred" value="input" class="valor proventos"></td>
+                            <td>---</td>   
+                        </tr>
+                        <tr>
+                            <td>0032</td>
+                            <td class="verba">IRRF 13º</td>
+                            <td>---</td>
+                            <td class="descontos"><input type="text" inputmode="numeric" value="0,00" step="0.1" placeholder="R$ 0,00" class="valor descontos"></td>     
+                        </tr>
+                        <tr>
+                            <td>0037</td>
+                            <td class="verba">Desconto de Adiantamento de 13º Salário</td>
+                            <td>---</td>
+                            <td class="descontos"><input type="text" inputmode="numeric" value="0,00" step="0.1" placeholder="R$ 0,00" class="valor descontos"></td>     
+                        </tr>
+                        <tr>
+                            <td>0041</td>
+                            <td class="verba">Férias no mês</td>
+                            <td class="proventos"><input type="text" inputmode="numeric" value="0,00" step="0.1" placeholder="R$ 0,00" class="valor proventos"></td>
+                            <td>---</td>     
+                        </tr>
+                        <tr>
+                            <td>0052</td>
+                            <td class="verba">Adicional de Férias no Mês</td>
+                            <td class="proventos"><input type="text" inputmode="numeric" value="0,00" step="0.1" placeholder="R$ 0,00" class="valor proventos"></td>
+                            <td>---</td>     
+                        </tr>
+                        <tr>
+                            <td>0053</td>
+                            <td class="verba">Férias no Próximo Mês</td>
+                            <td class="proventos"><input type="text" inputmode="numeric" value="0,00" step="0.1" placeholder="R$ 0,00" class="valor proventos"></td>
+                            <td>---</td>     
+                        </tr>
+                        <tr>
+                            <td>0056</td>
+                            <td class="verba">INSS Sobre Férias</td>
+                            <td>---</td>
+                            <td class="descontos"><input type="text" inputmode="numeric" value="0,00" step="0.1" placeholder="R$ 0,00" class="valor descontos"></td>     
+                        </tr>
+                        <tr>
+                            <td>0058</td>
+                            <td class="verba">Valor Pago nas Férias</td>
+                            <td>---</td>
+                            <td class="descontos"><input type="text" inputmode="numeric" value="0,00" step="0.1" placeholder="R$ 0,00" class="valor descontos"></td>     
+                        </tr>
+                        <tr>
+                            <td>0059</td>
+                            <td class="verba">Adicional Abono Pecuniário</td>
+                            <td class="proventos"><input type="text" inputmode="numeric" value="0,00" step="0.1" placeholder="R$ 0,00" class="valor proventos"></td>
+                            <td>---</td>     
+                        </tr>
+                        <tr>
+                            <td>0060</td>
+                            <td class="verba">Abono Pecuniário</td>
+                            <td class="proventos"><input type="text" inputmode="numeric" value="0,00" step="0.1" placeholder="R$ 0,00" class="valor proventos"></td>
+                            <td>---</td>     
+                        </tr>
+                        <tr>
+                            <td>0061</td>
+                            <td class="verba">Adicional de Férias no Próximo Mês</td>
+                            <td class="proventos"><input type="text" inputmode="numeric" value="0,00" step="0.1" placeholder="R$ 0,00" class="valor proventos"></td>
+                            <td>---</td>     
+                        </tr>
+                        <tr>
+                            <td>0062</td>
+                            <td class="verba">IRRF de Férias</td>
+                            <td>---</td>
+                            <td class="descontos"><input type="text" inputmode="numeric" value="0,00" step="0.1" placeholder="R$ 0,00" class="valor descontos"></td>     
+                        </tr>
+                        <tr>
+                            <td>0068</td>
+                            <td class="verba">Saldo Negativo</td>
+                            <td>---</td>
+                            <td class="descontos"><input type="text" inputmode="numeric" value="0,00" step="0.1" placeholder="R$ 0,00" class="valor descontos"></td>     
+                        </tr>
+                        <tr>
+                            <td>0078</td>
+                            <td class="verba">Aviso Prévio Indenizado</td>
+                            <td class="proventos"><input type="text" inputmode="numeric" value="0,00" step="0.1" placeholder="R$ 0,00" class="valor proventos"></td>
+                            <td>---</td>     
+                        </tr>
+                        <tr>
+                            <td>0080</td>
+                            <td class="verba">Desconto de Aviso Prévio Indenizado</td>
+                            <td>---</td>
+                            <td class="descontos"><input type="text" inputmode="numeric" value="0,00" step="0.1" placeholder="R$ 0,00" class="valor descontos"></td>     
+                        </tr>
+                        <tr>
+                            <td>0081</td>
+                            <td class="verba">Férias Proporcionais</td>
+                            <td class="proventos"><input type="text" inputmode="numeric" value="0,00" step="0.1" placeholder="R$ 0,00" class="valor proventos"></td>
+                            <td>---</td>     
+                        </tr>
+                        <tr>
+                            <td>0082</td>
+                            <td class="verba">DSR</td>
+                            <td class="proventos"><input type="text" inputmode="numeric" value="0,00" step="0.1" placeholder="R$ 0,00" class="valor proventos"></td>
+                            <td>---</td>     
+                        </tr>
+                        <tr>
+                            <td>0086</td>
+                            <td class="verba">Salário Família</td>
+                            <td class="proventos"><input type="text" inputmode="numeric" value="0,00" step="0.1" placeholder="R$ 0,00" class="valor proventos"></td>
+                            <td>---</td>     
+                        </tr>
+                        <tr>
+                            <td>0088</td>
+                            <td class="verba">INSS</td>
+                            <td>---</td>
+                            <td class="descontos"><input type="text" inputmode="numeric" value="0,00" step="0.1" placeholder="R$ 0,00" class="valor descontos"></td>          
+                        </tr>
+                        <tr>
+                            <td>0089</td>
+                            <td class="verba">Imposto de Renda</td>
+                            <td>---</td>
+                            <td class="descontos"><input type="text" inputmode="numeric" value="0,00" step="0.1" placeholder="R$ 0,00" class="valor descontos"></td>     
+                        </tr>
+                        <tr>
+                            <td>0087</td>
+                            <td class="verba">Salário Maternidade</td>
+                            <td class="proventos"><input type="text" inputmode="numeric" value="0,00" step="0.1" placeholder="R$ 0,00" class="valor proventos"></td>
+                            <td>---</td>     
+                        </tr>
+                        <tr>
+                            <td>0105</td>
+                            <td class="verba">Hora Extra Normal</td>
+                            <td>---</td>
+                            <td class="proventos"><input type="text" inputmode="numeric" value="0,00" step="0.1" placeholder="R$ 0,00" class="valor proventos"></td>     
+                        </tr>
+                        <tr>
+                            <td>0109</td>
+                            <td class="verba">Hora Extra Feriados</td>
+                            <td class="proventos"><input type="text" inputmode="numeric" value="0,00" step="0.1" placeholder="R$ 0,00" class="valor proventos"></td>
+                            <td>---</td>     
+                        </tr>
+                        <tr>
+                            <td>0110</td>
+                            <td class="verba">Atrasos</td>
+                            <td>---</td>
+                            <td class="descontos"><input type="text" inputmode="numeric" value="0,00" step="0.1" placeholder="R$ 0,00" class="valor descontos"></td>        
+                        </tr>
+                        <tr>
+                            <td>0111</td>
+                            <td class="verba">Faltas</td>
+                            <td>---</td>
+                            <td class="descontos"><input type="text" inputmode="numeric" value="0,00" step="0.1" placeholder="R$ 0,00" class="valor descontos"></td>        
+                        </tr>
+                        <tr>
+                            <td>0112</td>
+                            <td class="verba">Adicional Noturno</td>
+                            <td class="proventos"><input type="text" inputmode="numeric" value="0,00" step="0.1" placeholder="R$ 0,00" class="valor proventos"></td>
+                            <td>---</td>     
+                        </tr>
+                        <tr>
+                            <td>0115</td>
+                            <td class="verba">Salário Base</td>
+                            <td class="proventos"><input type="text" inputmode="numeric" value="0,00" step="0.1" placeholder="R$ 0,00" class="valor proventos"></td>
+                            <td>---</td>     
+                        </tr>
+                        <tr>
+                            <td>0144</td>
+                            <td class="verba">DSR Sobre Faltas</td>
+                            <td>---</td>
+                            <td class="descontos"><input type="text" inputmode="numeric" value="0,00" step="0.1" placeholder="R$ 0,00" class="valor descontos"></td>        
+                        </tr>
+                        <tr>
+                            <td>0159</td>
+                            <td class="verba">Devolução V.Transporte não Utilizado</td>
+                            <td>---</td>
+                            <td class="descontos"><input type="text" inputmode="numeric" value="0,00" step="0.1" placeholder="R$ 0,00" class="valor descontos"></td>        
+                        </tr>
+                        <tr>
+                            <td>0164</td>
+                            <td class="verba">Desc.Vale Transporte</td>
+                            <td>---</td>
+                            <td class="descontos"><input type="text" inputmode="numeric" value="0,00" step="0.1" placeholder="R$ 0,00" class="valor descontos"></td>        
+                        </tr>
+                        <tr>
+                            <td>0167</td>
+                            <td class="verba">Triênio</td>
+                            <td class="proventos"><input type="text" inputmode="numeric" value="0,00" step="0.1" placeholder="R$ 0,00" class="valor proventos"></td>
+                            <td>---</td>     
+                        </tr>
+                        <tr>
+                            <td>0173</td>
+                            <td class="verba">Contrib.Assistencial-Sigaban</td>
+                            <td>---</td>
+                            <td class="descontos"><input type="text" inputmode="numeric" value="0,00" step="0.1" placeholder="R$ 0,00" class="valor descontos"></td>        
+                        </tr>
+                        <tr>
+                            <td>0174</td>
+                            <td class="verba">Pensão Alimentícia</td>
+                            <td>---</td>
+                            <td class="descontos"><input type="text" inputmode="numeric" value="0,00" step="0.1" placeholder="R$ 0,00" class="valor descontos"></td>        
+                        </tr>
+                        <tr>
+                            <td>0180</td>
+                            <td class="verba">Ind Adicional Cláusula 9</td>
+                            <td class="proventos"><input type="text" inputmode="numeric" value="0,00" step="0.1" placeholder="R$ 0,00" class="valor proventos"></td>
+                            <td>---</td>     
+                        </tr>
+                        <tr>
+                            <td>0191</td>
+                            <td class="verba">IRRF Sobre Folha</td>
+                            <td>---</td>
+                            <td class="descontos"><input type="text" inputmode="numeric" value="0,00" step="0.1" placeholder="R$ 0,00" class="valor descontos"></td>        
+                        </tr>
+                        <tr>
+                            <td>0200</td>
+                            <td class="verba">DSR Sobre Variáveis</td>
+                            <td class="proventos"><input type="text" inputmode="numeric" value="0,00" step="0.1" placeholder="R$ 0,00" class="valor proventos"></td>
+                            <td>---</td>     
+                        </tr>
+                        <tr>
+                            <td>0202</td>
+                            <td class="verba">RSR Sobre Férias</td>
+                            <td class="proventos"><input type="text" inputmode="numeric" value="0,00" step="0.1" placeholder="R$ 0,00" class="valor proventos"></td>
+                            <td>---</td>     
+                        </tr>
+                        <tr>
+                            <td>0223</td>
+                            <td class="verba">Diferença de Dissídio</td>
+                            <td class="proventos"><input type="text" inputmode="numeric" value="0,00" step="0.1" placeholder="R$ 0,00" class="valor proventos"></td>
+                            <td>---</td>     
+                        </tr>
+                        <tr>
+                            <td>9R23FO</td>
+                            <td class="verba">Insalubridade</td>
+                            <td class="proventos"><input type="text" inputmode="numeric" value="0,00" step="0.1" placeholder="R$ 0,00" class="valor proventos"></td>
+                            <td>---</td>     
+                        </tr>
+                        <tr>
+                            <td>PT09FO</td>
+                            <td class="verba">Anuênio</td>
+                            <td class="proventos"><input type="text" inputmode="numeric" value="0,00" step="0.1" placeholder="R$ 0,00" class="valor proventos"></td>
+                            <td>---</td>     
+                        </tr>
+                        <tr>
+                            <td>PT40FO</td>
+                            <td class="verba">Desc.Vale Alimentação</td>
+                            <td>---</td>
+                            <td class="descontos"><input type="text" inputmode="numeric" value="0,00" step="0.1" placeholder="R$ 0,00" class="valor descontos"></td>      
+                        </tr>
+                        <tr>
+                            <td>PT84FO</td>
+                            <td class="verba">Plano de Saúde Dependentes</td>
+                            <td>---</td>
+                            <td class="descontos"><input type="text" inputmode="numeric" value="0,00" step="0.1" placeholder="R$ 0,00" class="valor descontos"></td>      
+                        </tr>
+                        <tr>
+                            <td>PU40FO</td>
+                            <td class="verba">Refeição</td>
+                            <td>---</td>
+                            <td class="descontos"><input type="text" inputmode="numeric" value="0,00" step="0.1" placeholder="R$ 0,00" class="valor descontos"></td>      
+                        </tr>
+                        <tr>
+                            <td>PU45FO</td>
+                            <td class="verba">Plano de Saúde</td>
+                            <td>---</td>
+                            <td class="descontos"><input type="text" inputmode="numeric" value="0,00" step="0.1" placeholder="R$ 0,00" class="valor descontos"></td>      
+                        </tr>
+                        <tr>
+                            <td>PU47FO</td>
+                            <td class="verba">Contribuição Assistencial - Hoteleiros</td>
+                            <td>---</td>
+                            <td class="descontos"><input type="text" inputmode="numeric" value="0,00" step="0.1" placeholder="R$ 0,00" class="valor descontos"></td>      
+                        </tr>
+                        <tr>
+                            <td>9R35FO</td>
+                            <td class="verba">Diferença Salarial</td>
+                            <td class="proventos"><input type="text" inputmode="numeric" value="0,00" step="0.1" placeholder="R$ 0,00" class="valor proventos"></td>
+                            <td>---</td>     
+                        </tr>  
+                    </tbody>
+                </table>
+            </div>    
+        </div>
+        <div class="container2">
+            <div class="table count" id="divTabela">    
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Contabilização</th>
+                            <th>Verba</th>
+                            <th>Valor</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>D - 322101 | C - 215102</td>
+                            <td class="verba">0030 - Areedondamento Positivo</td>
+                            <td class="proventos"><input type="text" inputmode="numeric" value="0,00" step="0.1" placeholder="R$ 0,00" id="verbaProventos" readonly class="valor proventos"></td>
+                        </tr>
+                        <tr>
+                            <td>D - 322101 | C - 215102</td>
+                            <td class="verba">Multa por Antecipação de fim de Contrato</td>
+                            <td class="proventos"><input type="text" inputmode="numeric" value="0,00" step="0.1" placeholder="R$ 0,00" id="verbaProventos" readonly class="valor proventos"></td>
+                        </tr>
+                        <tr>
+                            <td>D - 322101 | C - 215102</td>
+                            <td class="verba">Adicional de Férias no Mês</td>
+                            <td class="proventos"><input type="text" inputmode="numeric" value="0,00" step="0.1" placeholder="R$ 0,00" id="verbaProventos" readonly class="valor proventos"></td>
+                        </tr>
+                        <tr>
+                            <td>D - 322101 | C - 215102</td>
+                            <td class="verba">0115 - Salário Base</td>
+                            <td class="proventos"><input type="text" inputmode="numeric" value="0,00" step="0.1" placeholder="R$ 0,00" id="verbaProventos" readonly class="valor proventos"></td>
+                        </tr>
+                        <tr>
+                            <td>D - 215102 | C - 112803</td>
+                            <td class="verba">0006 - Desconto de Adiantamento</td>
+                            <td class="descontos"><input type="text" inputmode="numeric" value="0,00" step="0.1" placeholder="R$ 0,00" id="verbaDescontos" readonly class="valor descontos"></td>
+                        </tr>
+                        <tr>
+                            <td>D - 215102 | C - 322108</td>
+                            <td class="verba">0029 - Vale Transporte</td>
+                            <td class="descontos"><input type="text" inputmode="numeric" value="0,00" step="0.1" placeholder="R$ 0,00" id="verbaDescontos" readonly class="valor descontos"></td>
+                        </tr>
+                        <tr>
+                            <td>D - 322101 | C - 215102</td>
+                            <td class="verba">0068 - Saldo Negativo</td>
+                            <td class="descontos"><input type="text" inputmode="numeric" value="0,00" step="0.1" placeholder="R$ 0,00" id="verbaDescontos" readonly class="valor descontos"></td>
+                        </tr>
+                        <tr>
+                            <td>D - 215102 | C - 215103</td>
+                            <td class="verba">0088 - INSS</td>
+                            <td class="descontos"><input type="text" inputmode="numeric" value="0,00" step="0.1" placeholder="R$ 0,00" id="verbaDescontos" readonly class="valor descontos"></td>
+                        </tr>
+                        <tr>
+                            <td>D - 215102 | C - 322101</td>
+                            <td class="verba">0111 - Faltas</td>
+                            <td class="descontos"><input type="text" inputmode="numeric" value="0,00" step="0.1" placeholder="R$ 0,00" id="verbaDescontos" readonly class="valor descontos"></td>
+                        </tr>
+                        <tr>
+                            <td>D - 215102 | C - 322107</td>
+                            <td class="verba">0144 - DSR Sobre Faltas</td>
+                            <td class="descontos"><input type="text" inputmode="numeric" value="0,00" step="0.1" placeholder="R$ 0,00" id="verbaDescontos" readonly class="valor descontos"></td>
+                        </tr>
+                        <tr>
+                            <td>D - 322103 | C - 215102</td>
+                            <td class="verba">0041 - Férias</td>
+                            <td class="proventos"><input type="text" inputmode="numeric" value="0,00" step="0.1" placeholder="R$ 0,00" id="verbaProventos" readonly class="valor proventos"></td>
+                        </tr>
+                        <tr>
+                            <td>D - 215102 | C - 215103</td>
+                            <td class="verba">0056 - INSS Sobre Férias</td>
+                            <td class="descontos"><input type="text" inputmode="numeric" value="0,00" step="0.1" placeholder="R$ 0,00" id="verbaDescontos" readonly class="valor descontos"></td>
+                        </tr>
+                        <tr>
+                            <td>D - 215102 | C - 112806</td>
+                            <td class="verba">0058 - Valor Pago nas Férias</td>
+                            <td class="descontos"><input type="text" inputmode="numeric" value="0,00" step="0.1" placeholder="R$ 0,00" id="verbaDescontos" readonly class="valor descontos"></td>
+                        </tr>
+                        <tr>
+                            <td>D - 215102 | C - 214114</td>
+                            <td class="verba">0062 - IRRF de Férias</td>
+                            <td class="descontos"><input type="text" inputmode="numeric" value="0,00" step="0.1" placeholder="R$ 0,00" id="verbaDescontos" readonly class="valor descontos"></td>
+                        </tr>
+                        <tr>
+                            <td>D - 215102 | C - 214114</td>
+                            <td class="verba">0089 - Imposto de Renda</td>
+                            <td class="descontos"><input type="text" inputmode="numeric" value="0,00" step="0.1" placeholder="R$ 0,00" id="verbaDescontos" readonly class="valor descontos"></td>
+                        </tr>
+                        <tr>
+                            <td>D - 215103 | C - 215102</td>
+                            <td class="verba">0086 - Salário Família</td>
+                            <td class="proventos"><input type="text" inputmode="numeric" value="0,00" step="0.1" placeholder="R$ 0,00" id="verbaProventos" readonly class="valor proventos"></td>
+                        </tr>
+                        <tr>
+                            <td>D - 215102 | C - 322101</td>
+                            <td class="verba">Desconto Vale Alimentação</td>
+                            <td class="descontos"><input type="text" inputmode="numeric" value="0,00" step="0.1" placeholder="R$ 0,00" id="verbaDescontos" readonly class="valor descontos"></td>
+                        </tr>
+                        <tr>
+                            <td>D - 322101 | C - 215102</td>
+                            <td class="verba">0109 - Hora Extra Feriados</td>
+                            <td class="proventos"><input type="text" inputmode="numeric" value="0,00" step="0.1" placeholder="R$ 0,00" id="verbaProventos" readonly class="valor proventos"></td>
+                        </tr>
+                        <tr>
+                            <td>D - 322104 | C - 215102</td>
+                            <td class="verba">0017 - 13º Proporcional</td>
+                            <td class="proventos"><input type="text" inputmode="numeric" value="0,00" step="0.1" placeholder="R$ 0,00" id="verbaProventos" readonly class="valor proventos"></td>
+                        </tr>
+                        <tr>
+                            <td>D - 322101 | C - 215102</td>
+                            <td class="verba">0109 - Multa Dissídio</td>
+                            <td class="proventos"><input type="text" inputmode="numeric" value="0,00" step="0.1" placeholder="R$ 0,00" id="verbaProventos" readonly class="valor proventos"></td>
+                        </tr>
+                        <tr>
+                            <td>D - 322103 | C - 215102</td>
+                            <td class="verba">0081 - Férias Proporcionais</td>
+                            <td class="proventos"><input type="text" inputmode="numeric" value="0,00" step="0.1" placeholder="R$ 0,00" id="verbaProventos" readonly class="valor proventos"></td>
+                        </tr>
+                        <tr>
+                            <td>D - 322117 | C - 215102</td>
+                            <td class="verba">0112 - Adicional Noturno</td>
+                            <td class="proventos"><input type="text" inputmode="numeric" value="0,00" step="0.1" placeholder="R$ 0,00" id="verbaProventos" readonly class="valor proventos"></td>
+                        </tr>
+                        <tr>
+                            <td>D - 322107 | C - 215102</td>
+                            <td class="verba">0200 - DSR Sobre Variáveis</td>
+                            <td class="proventos"><input type="text" inputmode="numeric" value="0,00" step="0.1" placeholder="R$ 0,00" id="verbaProventos" readonly class="valor proventos"></td>
+                        </tr>
+                        <tr>
+                            <td>D - 322103 | C - 215102</td>
+                            <td class="verba">0010 - Adic.de Férias S/ Aviso Indenizado</td>
+                            <td class="proventos"><input type="text" inputmode="numeric" value="0,00" step="0.1" placeholder="R$ 0,00" id="verbaProventos" readonly class="valor proventos"></td>
+                        </tr>
+                        <tr>
+                            <td>D - 322103 | C - 215102</td>
+                            <td class="verba">0011 - Férias Sobre Aviso Indenizado</td>
+                            <td class="proventos"><input type="text" inputmode="numeric" value="0,00" step="0.1" placeholder="R$ 0,00" id="verbaProventos" readonly class="valor proventos"></td>
+                        </tr>
+                        <tr>
+                            <td>D - 322103 | C - 215102</td>
+                            <td class="verba">0012 - Adicional de Férias Proporcionais</td>
+                            <td class="proventos"><input type="text" inputmode="numeric" value="0,00" step="0.1" placeholder="R$ 0,00" id="verbaProventos" readonly class="valor proventos"></td>
+                        </tr>
+                        <tr>
+                            <td>D - 322104 | C - 215102</td>
+                            <td class="verba">0018 - 13º Indenizado</td>
+                            <td class="proventos"><input type="text" inputmode="numeric" value="0,00" step="0.1" placeholder="R$ 0,00" id="verbaProventos" readonly class="valor proventos"></td>
+                        </tr>
+                        <tr>
+                            <td>D - 322113 | C - 215102</td>
+                            <td class="verba">0078 - Aviso Prévio Indenizado</td>
+                            <td class="proventos"><input type="text" inputmode="numeric" value="0,00" step="0.1" placeholder="R$ 0,00" id="verbaProventos" readonly class="valor proventos"></td>
+                        </tr>
+                        <tr>
+                            <td>D - 215102 | C - 215108</td>
+                            <td class="verba">0002 - Valor Pago na Rescisão</td>
+                            <td class="descontos"><input type="text" inputmode="numeric" value="0,00" step="0.1" placeholder="R$ 0,00" id="verbaDescontos002" readonly class="valor descontos"></td>
+                        </tr>
+                        <tr>
+                            <td>D - 215102 | C - 215103</td>
+                            <td class="verba">0024 - INSS 13º</td>
+                            <td class="descontos"><input type="text" inputmode="numeric" value="0,00" step="0.1" placeholder="R$ 0,00" id="verbaDescontos" readonly class="valor descontos"></td>
+                        </tr>
+                        <tr>
+                            <td>D - 322103 | C - 215102</td>
+                            <td class="verba">0008 - Adicional de Férias Vencidas</td>
+                            <td class="proventos"><input type="text" inputmode="numeric" value="0,00" step="0.1" placeholder="R$ 0,00" id="verbaProventos" readonly class="valor proventos"></td>
+                        </tr>
+                        <tr>
+                            <td>D - 322103 | C - 215102</td>
+                            <td class="verba">0009 - Férias Vencidas</td>
+                            <td class="proventos"><input type="text" inputmode="numeric" value="0,00" step="0.1" placeholder="R$ 0,00" id="verbaProventos" readonly class="valor proventos"></td>
+                        </tr>
+                        <tr>
+                            <td>D - 215102 | C - 322108</td>
+                            <td class="verba">0164 - Desc.Vale Transporte</td>
+                            <td class="descontos"><input type="text" inputmode="numeric" value="0,00" step="0.1" placeholder="R$ 0,00" id="verbaDescontos" readonly class="valor descontos"></td>
+                        </tr>
+                        <tr>
+                            <td>D - 215102 | C - 215105</td>
+                            <td class="verba">0173 - Contrib.Assistencial Sigabam</td>
+                            <td class="descontos"><input type="text" inputmode="numeric" value="0,00" step="0.1" placeholder="R$ 0,00" id="verbaDescontos" readonly class="valor descontos"></td>
+                        </tr>
+                        <tr>
+                            <td>D - 215102 | C - 215109</td>
+                            <td class="verba">0174 - Pensão Alimentícia</td>
+                            <td class="descontos"><input type="text" inputmode="numeric" value="0,00" step="0.1" placeholder="R$ 0,00" id="verbaDescontos" readonly class="valor descontos"></td>
+                        </tr>
+                        <tr>
+                            <td>D - 215102 | C - 214114</td>
+                            <td class="verba">0191 - IRRF Sobre Folha</td>
+                            <td class="descontos"><input type="text" inputmode="numeric" value="0,00" step="0.1" placeholder="R$ 0,00" id="verbaDescontos" readonly class="valor descontos"></td>
+                        </tr>
+                        <tr>
+                            <td>D - 215102 | C - 215105</td>
+                            <td class="verba">PU47FO - Contrib.Assistencial Hoteleiros</td>
+                            <td class="descontos"><input type="text" inputmode="numeric" value="0,00" step="0.1" placeholder="R$ 0,00" id="verbaDescontos" readonly class="valor descontos"></td>
+                        </tr>
+                        <tr>
+                            <td>D - 215106 | C - 215102</td>
+                            <td class="verba">0053 - Férias no Próximo Mês</td>
+                            <td class="proventos"><input type="text" inputmode="numeric" value="0,00" step="0.1" placeholder="R$ 0,00" id="verbaProventos" readonly class="valor proventos"></td>
+                        </tr>
+                        <tr>
+                            <td>D - 322123 | C - 215102</td>
+                            <td class="verba">0059 - Adicional Abono Pecuniário</td>
+                            <td class="proventos"><input type="text" inputmode="numeric" value="0,00" step="0.1" placeholder="R$ 0,00" id="verbaProventos" readonly class="valor proventos"></td>
+                        </tr>
+                        <tr>
+                            <td>D - 322123 | C - 215102</td>
+                            <td class="verba">0060 - Abono Pecuniário</td>
+                            <td class="proventos"><input type="text" inputmode="numeric" value="0,00" step="0.1" placeholder="R$ 0,00" id="verbaProventos" readonly class="valor proventos"></td>
+                        </tr>
+                        <tr>
+                            <td>D - 112806 | C - 215102</td>
+                            <td class="verba">0061 - Adicional de Férias no Próximo Mês</td>
+                            <td class="proventos"><input type="text" inputmode="numeric" value="0,00" step="0.1" placeholder="R$ 0,00" id="verbaProventos" readonly class="valor proventos"></td>
+                        </tr>
+                        <tr>
+                            <td>D - 322107 | C - 215102</td>
+                            <td class="verba">0081 - DSR</td>
+                            <td class="proventos"><input type="text" inputmode="numeric" value="0,00" step="0.1" placeholder="R$ 0,00" id="verbaProventos" readonly class="valor proventos"></td>
+                        </tr>
+                        <tr>
+                            <td>D - 322107 | C - 215102</td>
+                            <td class="verba">0202 - RSR Sobre Férias</td>
+                            <td class="proventos"><input type="text" inputmode="numeric" value="0,00" step="0.1" placeholder="R$ 0,00" id="verbaProventos" readonly class="valor proventos"></td>
+                        </tr>
+                        <tr>
+                            <td>D - 215102 | C - 414301</td>
+                            <td class="verba">0015 - Desconto Multa Ant.Fim de Contrato</td>
+                            <td class="descontos"><input type="text" inputmode="numeric" value="0,00" step="0.1" placeholder="R$ 0,00" id="verbaDescontos" readonly class="valor descontos"></td>
+                        </tr>
+                        <tr>
+                            <td>D - 322124 | C - 215102</td>
+                            <td class="verba">Insalubridade</td>
+                            <td class="proventos"><input type="text" inputmode="numeric" value="0,00" step="0.1" placeholder="R$ 0,00" id="verbaProventos" readonly class="valor proventos"></td>
+                        </tr>
+                        <tr>
+                            <td>D - 322101 | C - 215102</td>
+                            <td class="verba">0105 - Hora Extra Normal</td>
+                            <td class="proventos"><input type="text" inputmode="numeric" value="0,00" step="0.1" placeholder="R$ 0,00" id="verbaProventos" readonly class="valor proventos"></td>
+                        </tr>
+                        <tr>
+                            <td>D - 215102 | C - 322101</td>
+                            <td class="verba">0110 - Atrasos</td>
+                            <td class="descontos"><input type="text" inputmode="numeric" value="0,00" step="0.1" placeholder="R$ 0,00" id="verbaDescontos" readonly class="valor descontos"></td>
+                        </tr>
+                        <tr>
+                            <td>D - 322115 | C - 215102</td>
+                            <td class="verba">0167 - Triênio</td>
+                            <td class="proventos"><input type="text" inputmode="numeric" value="0,00" step="0.1" placeholder="R$ 0,00" id="verbaProventos" readonly class="valor proventos"></td>
+                        </tr>
+                        <tr>
+                            <td>D - 215102 | C - 322110</td>
+                            <td class="verba">Plano de Saúde Dependentes</td>
+                            <td class="descontos"><input type="text" inputmode="numeric" value="0,00" step="0.1" placeholder="R$ 0,00" id="verbaDescontos" readonly class="valor descontos"></td>
+                        </tr>
+                        <tr>
+                            <td>D - 215102 | C - 322110</td>
+                            <td class="verba">Plano de Saúde</td>
+                            <td class="descontos"><input type="text" inputmode="numeric" value="0,00" step="0.1" placeholder="R$ 0,00" id="verbaDescontos" readonly class="valor descontos"></td>
+                        </tr>
+                        <tr>
+                            <td>D - 322101 | C - 215102</td>
+                            <td class="verba">Diferença Salarial</td>
+                            <td class="proventos"><input type="text" inputmode="numeric" value="0,00" step="0.1" placeholder="R$ 0,00" id="verbaProventos" readonly class="valor proventos"></td>
+                        </tr>
+                        <tr>
+                            <td>D - 215102 | C - 322113</td>
+                            <td class="verba">0080 - Desconto de Aviso Prévio Indenizado</td>
+                            <td class="descontos"><input type="text" inputmode="numeric" value="0,00" step="0.1" placeholder="R$ 0,00" id="verbaDescontos" readonly class="valor descontos"></td>
+                        </tr>
+                        <tr>
+                            <td>D - 322129 | C - 215102</td>
+                            <td class="verba">0180 - Ind.Adicional Cláusula 9</td>
+                            <td class="proventos"><input type="text" inputmode="numeric" value="0,00" step="0.1" placeholder="R$ 0,00" id="verbaProventos" readonly class="valor proventos"></td>
+                        </tr>
+                        <tr>
+                            <td>D - 215102 | C - 214114</td>
+                            <td class="verba">0032 - IRRF 13°</td>
+                            <td class="descontos"><input type="text" inputmode="numeric" value="0,00" step="0.1" placeholder="R$ 0,00" id="verbaDescontos" readonly class="valor descontos"></td>
+                        </tr>
+                        <tr>
+                            <td>D - 215102 | C - 112805</td>
+                            <td class="verba">0037 - Desconto Adiantamento 13º</td>
+                            <td class="descontos"><input type="text" inputmode="numeric" value="0,00" step="0.1" placeholder="R$ 0,00" id="verbaDescontos" readonly class="valor descontos"></td>
+                        </tr>
+                        <tr>
+                            <td>D - 322101 | C - 215102</td>
+                            <td class="verba">0223 - Diferença de Dissídio</td>
+                            <td class="proventos"><input type="text" inputmode="numeric" value="0,00" step="0.1" placeholder="R$ 0,00" id="verbaProventos" readonly class="valor proventos"></td>
+                        </tr>
+                        <tr>
+                            <td>D - 322101 | C - 215102</td>
+                            <td class="verba">Anuênio</td>
+                            <td class="proventos"><input type="text" inputmode="numeric" value="0,00" step="0.1" placeholder="R$ 0,00" id="verbaProventos" readonly class="valor proventos"></td>
+                        </tr>    
+                    </tbody>
+                </table>
+            </div>
+        </div> 
+        <script>
+            src="../javaScript/main.js"
+
+            $(document).ready(function(){
+                $("#download").click(function(e){
+                    e.preventDefault();
+
+                    var tabela = document.getElementById('divTabela');
+                    var dados = new Blob(['\ufeff' + tabela.outerHTML], {type:'application/vnd.ms-excel'});
+                    var url = window.URL.createObjectURL(dados);
+
+                    var a = document.createElement('a');
+
+                    a.href = url;
+
+                    a.download = 'Folha de Pagamento'
+
+                    a.click();
+
+                });
+            })
+
+        </script>   
+    </main>
+</body>
+
+</html>

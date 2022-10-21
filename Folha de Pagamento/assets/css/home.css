@@ -1,0 +1,87 @@
+
+body {
+
+    padding: 0;
+    margin: 0 auto;
+    background-image: linear-gradient(to right, rgba(105,105,105), rgba(220,220,220));
+    font-family: 'Bebas Neue', 'cursive';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    width: 1084px;
+    justify-content: space-between;
+    height: 340px;
+    background-color: dimgray;
+    border-radius: 12px;
+    opacity:0.4;
+    font-family: 'Bebas Neue', 'cursive';
+    box-shadow: 6px 6px 6px #4F4F4F;
+}
+
+
+.material-symbols-outlined {
+    display: flex;
+    position: relative;
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48;
+    color: #DCDCDC;
+    scale:8;
+
+}
+
+.modulo-contabil, .modulo-folha{
+    margin: 4px;
+    width:540px;
+    height: 340px;
+    background-color: dimgray;
+    opacity: 0.9; 
+}
+
+
+
+.payments, .work{  
+    color: #fff;
+    top:150px;
+    left:270px;
+    opacity: 0.9;
+}
+
+.work{
+    top:140px;
+}
+
+.payments-p, .work-p{
+    display: flex;
+    position: relative;
+    padding: 12px;
+    margin: 0 auto;
+    justify-content: center;
+    top:200px;
+    letter-spacing: 2px;
+    color: #fff;
+}
+
+.payments-p:hover, .work-p:hover{
+    color:#FF00FF;
+}
+
+.payments:hover, .work:hover{
+    scale:9;
+    color: #262626;
+}
+
+
+a{
+    text-decoration: none;
+}
+
