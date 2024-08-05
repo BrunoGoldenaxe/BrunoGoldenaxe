@@ -1,7 +1,6 @@
-## Olá, sou o Bruno Alves!
-Bem vindo a minha página.
+## Olá, sou o Bruno Alves! Bem vindo a minha página.
 
-🧑‍💻 #Sobre mim:
+🧑‍💻 ##Sobre mim:
 
 * 🌱 Atualmente aprimorando os conhecimentos em Angular 
 
