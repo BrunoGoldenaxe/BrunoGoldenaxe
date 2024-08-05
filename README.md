@@ -19,7 +19,7 @@
  🧠  Em progresso: 
 
  <div>
-    <img src="https://seeklogo.com/vector-logo/272812/angular" width="100"  height="100" alt="angular icon"> 
+    <img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/Angular_full_color_logo.svg" width="100"  height="100" alt="angular icon"> 
  </div>
 
 
