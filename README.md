@@ -8,5 +8,5 @@
 
 ⚡ Tecnologias: 
 
-![Texto Alternativo](https://www.pngegg.com/en/png-ewxsw)
+<img src="https://www.clipartmax.com/png/middle/117-1171017_spring-logo-spring-framework-logo.png" alt="Texto Alternativo"> 
 
