@@ -37,9 +37,5 @@
 
 [![DIO Lab Open Source](https://github-readme-stats.vercel.app/api/pin/?username=BrunoGoldenaxe&repo=dio-lab-open-source&bg_color=000&border_color=30A3DC&show_icons=true&icon_color=30A3DC&title_color=E94D5F&text_color=FFF)](https://github.com/BrunoGoldenaxe/dio-lab-open-source)
 
-## 📓 Meus Projetos em desenvolvimento
-
-[![iCount API](https://github-readme-stats.vercel.app/api/pin/?username=BrunoGoldenaxe&repo=iCount-api&bg_color=000&border_color=30A3DC&show_icons=true&icon_color=30A3DC&title_color=E94D5F&text_color=FFF)](https://github.com/BrunoGoldenaxe/iCount-api)
-[![iCount WEB](https://github-readme-stats.vercel.app/api/pin/?username=BrunoGoldenaxe&repo=iCount-web&bg_color=000&border_color=30A3DC&show_icons=true&icon_color=30A3DC&title_color=E94D5F&text_color=FFF)](https://github.com/BrunoGoldenaxe/iCount-web)
 
 
