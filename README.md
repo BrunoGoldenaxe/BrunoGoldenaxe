@@ -26,7 +26,7 @@
 
 <h3>🧠  Em progresso:</h3> 
 
-![Angular](https://img.shields.io/badge/AngularJS-E23237?style=for-the-badge&logo=angularjs&logoColor=white)
+![Angular](https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white)
 
 <h3>🧮 GitHub Stats</h3>
 
@@ -35,5 +35,5 @@
 
 <h3>📂 Meus Principais Desafios de Projeto DIO</h3>
 
-[![DIO Lab Open Source](https://github-readme-stats.vercel.app/api/pin/?username=digitalinnovationone&repo=roadmaps&bg_color=000&border_color=30A3DC&show_icons=true&icon_color=30A3DC&title_color=E94D5F&text_color=FFF)](https://github.com/BrunoGoldenaxe/dio-lab-open-source)
+[![DIO Lab Open Source](https://github-readme-stats.vercel.app/api/pin/?username=BrunoGoldenaxe&repo=diolabopensource&bg_color=000&border_color=30A3DC&show_icons=true&icon_color=30A3DC&title_color=E94D5F&text_color=FFF)](https://github.com/BrunoGoldenaxe/dio-lab-open-source)
 
