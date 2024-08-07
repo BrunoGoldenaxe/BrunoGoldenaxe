@@ -35,5 +35,5 @@
 
 <h3>📂 Meus Principais Desafios de Projeto DIO</h3>
 
-[![DIO Lab Open Source](https://github-readme-stats.vercel.app/api/pin/?username=BrunoGoldenaxe&repo=diolabopensource&bg_color=000&border_color=30A3DC&show_icons=true&icon_color=30A3DC&title_color=E94D5F&text_color=FFF)](https://github.com/BrunoGoldenaxe/dio-lab-open-source)
+[![DIO Lab Open Source](https://github-readme-stats.vercel.app/api/pin/?username=BrunoGoldenaxe&repo=dio-lab-open-source&bg_color=000&border_color=30A3DC&show_icons=true&icon_color=30A3DC&title_color=E94D5F&text_color=FFF)](https://github.com/BrunoGoldenaxe/dio-lab-open-source)
 
