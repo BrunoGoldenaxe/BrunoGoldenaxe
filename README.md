@@ -1,10 +1,10 @@
 ### Olá, sou o Bruno Alves! Bem vindo a minha página.
 
-#🧑‍💻 Sobre mim:
+<h1>🧑‍💻 Sobre mim: </h1>
 
-* 🖥 Sou desenvolvedor Back-end
-* 🌱 Atualmente aprimorando os conhecimentos em Angular
-* ✉ como me contatar: silvadevelopertools@outlook.com
+- 🖥 Sou desenvolvedor Back-end
+- 🌱 Atualmente aprimorando os conhecimentos em Angular
+- ✉ como me contatar: silvadevelopertools@outlook.com
 
 #⚡ Tecnologias: 
 
