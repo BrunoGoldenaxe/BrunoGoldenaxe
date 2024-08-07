@@ -1,12 +1,12 @@
-## Olá, sou o Bruno Alves! Bem vindo a minha página.
+### Olá, sou o Bruno Alves! Bem vindo a minha página.
 
-🧑‍💻 Sobre mim:
+#🧑‍💻 Sobre mim:
 
 * 🖥 Sou desenvolvedor Back-end
 * 🌱 Atualmente aprimorando os conhecimentos em Angular
 * ✉ como me contatar: silvadevelopertools@outlook.com
 
-⚡ Tecnologias: 
+#⚡ Tecnologias: 
 
   <div>
     <img src="https://www.logo.wine/a/logo/Java_(programming_language)/Java_(programming_language)-Logo.wine.svg" width="100"  height="100" alt="Java icon">  
@@ -16,7 +16,7 @@
   </div>
 
 
- 🧠  Em progresso: 
+ #🧠  Em progresso: 
 
  <div>
     <img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/Angular_full_color_logo.svg" width="100"  height="100" alt="angular icon"> 
