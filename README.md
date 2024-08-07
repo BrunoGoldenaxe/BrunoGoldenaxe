@@ -2,7 +2,7 @@
 
 <h3>🧑‍💻 Sobre mim:</h1>
 
-- 🖥 Sou desenvolvedor Back-end em Java
+- 🖥 Sou desenvolvedor Back-end 
 - 🌱 Atualmente aprimorando os conhecimentos em Angular
 
 <h3>🖥️ Conecte-se comigo</h3>
