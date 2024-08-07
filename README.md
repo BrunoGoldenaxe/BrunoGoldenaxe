@@ -1,6 +1,6 @@
-# Bruno Alves da Silva<
+# Bruno Alves da Silva
 
-<h3>🧑‍💻 Sobre mim:</h1>
+## 🧑‍💻 Sobre mim:
 
 - 🖥 Sou desenvolvedor Back-end 
 - 🌱 Atualmente aprimorando os conhecimentos em Angular
